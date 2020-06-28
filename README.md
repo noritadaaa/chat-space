@@ -8,8 +8,8 @@
 |email|string|null:false|
 
 ### Association
-- has_many :groups
 - has_many :posts
+- has_many :groups_user
 
 ## groupsテーブル
 
@@ -19,7 +19,8 @@
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-- has_many :users
+- has_many :posts
+- has_many :groups_user
 
 ## postsテーブル
 
