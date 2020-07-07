@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+.Chat-main
+  .group-info
+    .info-left
+      .info-left__test test
+      .info-left__member-name Member：masa
+    .info-right
+      = link_to "#", class: "edit-btn" do
+        .edit Edit
+  .message-list
+    .name-date
+      .name-date__chat-name masa
+      .name-date__date 2019/11/20(Wed) 17:43:01
+    .list
+      .list-message おはよう!
+    .name-date
+      .name-date__chat-name masa
+      .name-date__date 2019/11/20(Wed) 17:43:01
+    .list
+      .list-message おはよう!
+  
+  .message-form
+    .form
+      %form.new-message
+        .input-box
+          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file", class: "input-box__image__file"}
+        %input{type: "submit", class: "submit-btn", value: "Send"}
