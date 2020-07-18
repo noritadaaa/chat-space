@@ -14,13 +14,6 @@
   .message-list
     = render @messages
   
-  -#.message-list
-    -#.name-date
-      -#.name-date__chat-name masa
-      -#.name-date__date 2019/11/20(Wed) 17:43:01
-    -#.list
-      -#.list-message おはよう!
-  
   .message-form
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .Form__contents
