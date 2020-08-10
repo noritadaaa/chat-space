@@ -62,12 +62,11 @@
   .group-info {
     background-color: #ffffff;
     height: 100px;
-    padding: 0px 40px 0px 0px;
+    padding: 0px 40px;
     border-bottom: #eeeeee;
     display: flex;
     justify-content: space-between;
     .info-left {
-      margin-left: 40px;
       &__test {
         color: #333333;
         font-size: 20px;
@@ -77,6 +76,7 @@
         color: #999999;
         font-size: 12px;
         margin-top: 15px;
+        display: flex;
       }
     }
     .info-right {

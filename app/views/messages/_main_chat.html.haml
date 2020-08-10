@@ -4,9 +4,10 @@
       .info-left__test
         = @group.name
       %ul.info-left__member-name
-        %li.member
-          Member:  
-          = current_user.name
+        = "Member:"
+        %li.info-left__member
+          - @group.users.each do |user|
+            = user.name
     .info-right
       = link_to edit_group_path(@group), class: 'edit-btn' do
         Edit
